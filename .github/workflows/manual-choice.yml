@@ -48,4 +48,5 @@ jobs:
     # Runs a single command using the runners shell
     - name: Send greeting
       run: echo "Hello ${{ github.event.inputs.name }}"
-      run: echo "Building locales: ${{ github.event.inputs.locale }}"
+    - name: Output selected locale
+      run: echo "Building locales - ${{ github.event.inputs.locale }}"
