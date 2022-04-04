@@ -8,6 +8,7 @@ on:
   workflow_dispatch:
     # Inputs the workflow accepts.
     inputs:
+      # Maximum of 10 inputs
       root:
         type: boolean
         default: true
@@ -26,16 +27,6 @@ on:
       it_IT:
         type: boolean
       ja_JP:
-        type: boolean
-      nl_NL:
-        type: boolean
-      pl_PL:
-        type: boolean
-      pt_BR:
-        type: boolean
-      ru_RU:
-        type: boolean
-      zh_CN:
         type: boolean
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
